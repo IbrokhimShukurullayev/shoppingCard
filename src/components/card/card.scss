@@ -1,0 +1,96 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 25px;
+  .card {
+    padding: 21px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    &__img img {
+      max-width: 246px;
+      height: 246px;
+    }
+    &__text {
+      color: rgb(173, 173, 173);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__description {
+      max-width: 268px;
+      color: rgb(43, 43, 45);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+      text-align: left;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      p {
+        color: rgb(182, 182, 182);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+    &__list {
+      color: rgb(182, 182, 182);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+      span {
+        color: #3bb77e;
+        font-size: 16px;
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        color: rgb(59, 183, 126);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      p {
+        color: rgb(173, 173, 173);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: line-through;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 20px;
+        border-radius: 4px;
+        background: rgb(245, 62, 50);
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}

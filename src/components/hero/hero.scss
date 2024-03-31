@@ -1,0 +1,125 @@
+#hero {
+  background: rgb(230, 230, 230);
+  position: relative;
+  margin-bottom: 60px;
+  overflow: hidden;
+  .after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .befor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .befoors {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .before {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+  }
+  .karam {
+    position: absolute;
+    right: -100px;
+    bottom: -30px;
+  }
+}
+
+.hero {
+  padding: 200px 0 200px 0;
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(33, 37, 41);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    position: relative;
+    .perecant {
+      color: rgb(245, 62, 50);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+      text-align: left;
+    }
+    .perecant::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 25px;
+      height: 0.5px;
+      width: 50px;
+      background-color: rgb(245, 62, 50);
+      height: 2px;
+      width: 50px;
+      border-bottom: 1px solid;
+    }
+  }
+  &__title {
+    max-width: 522.06px;
+    color: #000;
+    font-family: Arial;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    padding: 15px 0 25px 0;
+  }
+  &__list {
+    max-width: 488px;
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.25px;
+    letter-spacing: 0.48px;
+    text-align: left;
+  }
+  &__input {
+    margin-top: 40px;
+    padding: 0 0 0 60px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    img {
+      position: absolute;
+      left: 25px;
+    }
+    input {
+      border: none;
+    }
+    input::placeholder {
+      color: rgb(131, 131, 131);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    button {
+      padding: 22px 40px;
+      border-radius: 50px;
+      background: rgb(59, 183, 126);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+  }
+}

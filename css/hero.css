@@ -26,6 +26,8 @@
 }
 #hero .karam {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   right: -100px;
   bottom: -30px;
 }

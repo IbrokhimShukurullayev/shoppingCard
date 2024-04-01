@@ -19,13 +19,21 @@
   padding-bottom: 30px;
   padding: 70px 15px 30px 50px;
 }
-.products .product-1 button {
+.products .product-1 .buttons {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
   letter-spacing: 0.5px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   border-radius: 4px;
   padding: 8px 13px;
   background: rgb(245, 62, 50);
@@ -46,13 +54,21 @@
   padding-bottom: 30px;
   padding: 70px 15px 30px 50px;
 }
-.products .product-2 button {
+.products .product-2 .buttons {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
   letter-spacing: 0.5px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   border-radius: 4px;
   padding: 8px 13px;
   background: rgb(245, 62, 50);
@@ -73,13 +89,21 @@
   padding-bottom: 30px;
   padding: 70px 15px 30px 50px;
 }
-.products .product-3 button {
+.products .product-3 .buttons {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
   letter-spacing: 0.5px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   border-radius: 4px;
   padding: 8px 13px;
   background: rgb(245, 62, 50);

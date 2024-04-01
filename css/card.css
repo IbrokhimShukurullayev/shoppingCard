@@ -1,5 +1,8 @@
 .row {
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-template-columns: repeat(4, 300px);
   gap: 25px;
 }
@@ -107,4 +110,14 @@
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+.row__buttons {
+  max-width: 180px;
+  padding: 10px 20px;
+  margin: 50px 0;
+  border-radius: 4px;
+  background: rgb(245, 62, 50);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }

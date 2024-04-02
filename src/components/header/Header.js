@@ -2,10 +2,11 @@ import React from 'react'
 import './header.scss'
 import toogle from '../../assets/images/togle.png'
 import vector from "../../assets/images/Vector.png"
-import Home from '../homes/Home'
+import Headerend from '../headerend/Headerend'
 
 function Header() {
   return (
+    <>
     <header className="header">
       <nav className="nav container">
         <div className="nav__logo__link">
@@ -25,6 +26,8 @@ function Header() {
         </div>
       </nav>
     </header>
+    <Headerend/>
+    </>
   )
 }
 

@@ -1,20 +1,25 @@
 import React from 'react'
 import './home.scss'
+import { Link } from 'react-router-dom'
+
 import logo from '../../assets/images/logo.png'
 import foot from '../../assets/images/foot.png'
 import search from "../../assets/images/search.png"
 import heart from "../../assets/images/heart.png"
 import person from '../../assets/images/person.png'
 import cart from '../../assets/images/cart.png'
+import { IoMdJet } from 'react-icons/io'
 
-function Home() {
+function Headerend() {
   return (
     <section>
         <div className="container">
           <div className="home">
             <div className="home__logo">
+              <Link to="/">
               <img src={logo} alt="" />
               <img src={foot} alt="" />
+              </Link>
             </div>
             <div className="home__search">
               <input type="text" placeholder="Search For items..." />
@@ -46,4 +51,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Headerend

@@ -1,0 +1,178 @@
+// @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// *,
+// *::after,
+// *::before {
+//   box-sizing: border-box;
+// }
+
+// button {
+//   border: none;
+//   cursor: pointer;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// ul {
+//   list-style-type: none;
+// }
+// .close,
+// .close ~ * {
+//   --aside-width: 75px;
+// }
+
+// .close .nav-link span {
+//   opacity: 0;
+// }
+
+// .close .title {
+//   display: none;
+// }
+
+// .close .close-title {
+//   display: block;
+// }
+
+// .close .logout-btn span {
+//   opacity: 0;
+// }
+
+// .close .mode-btn {
+//   transform: translate(-150px);
+// }
+
+// :root {
+//   --aside-width: 300px;
+//   --header-height: 80px;
+//   --footer-height: 50px;
+// }
+
+// aside,
+// header,
+// footer,
+// main {
+//   position: fixed;
+//   padding: 20px;
+//   transition: 0.5s;
+// }
+
+// header,
+// footer,
+// main {
+//   left: var(--aside-width);
+//   width: calc(100vw - var(--aside-width));
+// }
+
+// aside {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   height: 100vh;
+//   width: var(--aside-width);
+//   border-right: 2px solid black;
+//   overflow-y: scroll;
+// }
+
+// aside a {
+//   color: black;
+// }
+
+// .logo-link {
+//   font-size: 40px;
+// }
+
+// .close-title {
+//   display: none;
+// }
+
+// .nav-item {
+//   margin: 20px 0;
+// }
+
+// .nav-link {
+//   display: flex;
+//   gap: 15px;
+//   font-size: 20px;
+//   white-space: nowrap;
+// }
+
+// .nav-link span {
+//   transition: 0.5s;
+// }
+
+// .bottom-list {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   gap: 20px;
+// }
+
+// .logout-btn,
+// .mode-btn {
+//   display: flex;
+//   gap: 15px;
+//   background-color: transparent;
+//   font-size: 20px;
+//   white-space: nowrap;
+// }
+
+// .mode-btn {
+//   transition: 0.5s;
+// }
+
+// .logout-btn span {
+//   transition: 0.5s;
+// }
+
+// header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   height: var(--header-height);
+//   border-bottom: 2px solid black;
+// }
+
+// .header__person-img {
+//   width: 30px;
+//   border-radius: 50%;
+//   object-fit: cover;
+// }
+
+// .header__person {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .hamburger {
+//   background-color: transparent;
+//   font-size: 25px;
+// }
+
+// main {
+//   top: var(--header-height);
+//   height: calc(100vh - var(--header-height) - var(--footer-height));
+//   overflow: auto;
+// }
+
+// footer {
+//   bottom: 0;
+//   height: var(--footer-height);
+//   border-top: 2px solid black;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// footer a {
+//   color: #000;
+//   font-family: "Abril Fatface", serif;
+//   font-size: 25px;
+// }

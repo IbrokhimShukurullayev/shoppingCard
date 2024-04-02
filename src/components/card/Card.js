@@ -35,6 +35,11 @@ useEffect(()=> {
         .finally(()=> setLoading(false))
     }, [count ,categoryValue])
 
+    const getCategory = (text)=>{
+      setCategoryValue(text)
+      setData([])
+    }
+
     let products = data?.map(el=> (
         <div  key={el.id} className="card">
               <div className="card__img">
@@ -58,7 +63,7 @@ useEffect(()=> {
     ))
 
     // let categoriesItem = categories?.map((el , inx) => <option key={inx} value={el}>{el}</option>)
-    let categoriesItem = categories?.map((el , inx) => <li onClick={e => setCategoryValue(e.target.innerHTML)} className='filter__item' key={inx} >{el}</li>)
+    let categoriesItem = categories?.map((el , inx) => <li onClick={e => getCategory(e.target.innerHTML)} className='filter__item' key={inx} >{el}</li>)
     return (
     <section>
         <div className="container">
@@ -72,7 +77,7 @@ useEffect(()=> {
               Popular Products
             </h2>
             <ul className="filter__list">
-              <li className='filter__item items'>All</li>
+              <li onClick={()=> getCategory("")} className='filter__item items'>All</li>
               {categoriesItem}
             </ul>
           </div>

@@ -4,6 +4,8 @@ import "./single.scss"
 
 import { IoIosStar } from "react-icons/io";
 import {useParams} from "react-router-dom"
+import { FaHeart } from "react-icons/fa";
+import { LuEye } from "react-icons/lu";
 
 import blue from "../../assets/images/span-blue.png"
 import yellow from "../../assets/images/span-yellow.png"
@@ -18,6 +20,7 @@ function Single() {
 
   const [data , setData] = useState([])
   const [loading, setLoading] = useState(false)
+      let [count , setCuont] = useState(0)
 
   window.scrollTo(0,0)
 
@@ -32,7 +35,6 @@ function Single() {
 
     let findProduct = data.find(el => el.id === +id)
 
-    console.log(findProduct);
 
   return (
     <>
@@ -190,10 +192,35 @@ function Single() {
           </div>
           <div className="heros__right__price">
             <h2 >
-              ${findProduct?.price.toFixed(1)}
+              ${findProduct?.price.toFixed(1) * count}
             </h2>
-            <p>${findProduct?.price.toFixed(1) * 2}</p>
+            <p>${findProduct?.price.toFixed(1) * 2 * count}</p>
           </div>
+          <div className="heros__inform__right__weight">
+                <h3>Size/Weight :</h3>
+                <span>50kg</span>
+                <span>80kg</span>
+                <span>120kg</span>
+                <span>200kg</span>
+            </div>
+            <div className="heros__inform__right__buttons">
+                <div className="heros__inform__right__buttons__start">
+                    <p>{count}</p>
+                    <div>
+                        <button onClick={() => setCuont(count+1)}>+</button>
+                        <button onClick={() => setCuont(count-1)}>-</button>
+                    </div>
+                </div>
+                <button className="heros__inform__right__buttons__btn">
+                    Add To Cart
+                </button>
+                <button className="heros__inform__right__buttons__like__btn">
+                    <FaHeart /> 
+                </button>
+                <button className="heros__inform__right__buttons__like__btn">
+                    <LuEye />
+                </button>
+            </div>
           </div>
         </div>
         </div>

@@ -58,6 +58,14 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        p {
+          color: #000;
+        }
+      }
     }
   }
 }

@@ -33,8 +33,10 @@ function Headerend() {
             </div>
             <ul className="home__product">
               <li>
-                <img src={person} alt="" />
-                <p>Account</p>
+                <Link to="/admin">
+                  <img src={person} alt="" />
+                  <p>Account</p>
+                </Link>
               </li>
               <li>
                 <img src={heart} alt="" />
